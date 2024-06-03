@@ -24,8 +24,8 @@ Este projeto coleta dados de sensores oceânicos, armazena-os em um banco de dad
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/usuario/projeto-dados-oceanicos.git
-    cd projeto-dados-oceanicos
+    git clone https://github.com/gumoura82/Python-GS.git
+    cd Python-GS
     ```
 
 2. Instale as dependências:
@@ -68,3 +68,5 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 ## Autores
 
 - **Ygor Vieira Pontes RM - 555686** - *Desenvolvedor inicial*
+- ##Gustavo Oliveira de Moura RM - 555827## - *Desenvolvedor inicial*
+- ##Lynn Bueno Rosa RM - 551102 - *Desenvolvedor inicial*
