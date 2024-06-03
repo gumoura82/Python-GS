@@ -68,5 +68,5 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 ## Autores
 
 - **Ygor Vieira Pontes RM - 555686** - *Desenvolvedor inicial*
-- ##Gustavo Oliveira de Moura RM - 555827## - *Desenvolvedor inicial*
-- ##Lynn Bueno Rosa RM - 551102 - *Desenvolvedor inicial*
+- **Gustavo Oliveira de Moura RM - 555827** - *Desenvolvedor inicial*
+- **Lynn Bueno Rosa RM - 551102** - *Desenvolvedor inicial*
