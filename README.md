@@ -1,72 +1,48 @@
-# Python-GS
+# P# Projeto de Monitoramento de Dados Oceânicos
 
-# Projeto de Coleta e Análise de Dados Oceânicos
+## Descrição do Projeto
+Este projeto consiste em um sistema de monitoramento de dados oceânicos, utilizando sensores para coletar informações como temperatura, salinidade e detecção de petróleo. Os dados são armazenados em um banco de dados SQLite e analisados quanto à conformidade com os padrões esperados. Além disso, é possível visualizar graficamente a evolução desses dados ao longo do tempo.
 
-Este projeto coleta dados de sensores oceânicos, armazena-os em um banco de dados SQLite e gera visualizações para análise.
+## Instruções de Uso
 
-## Índice
+### 1. Criação da Tabela no Banco de Dados
+A tabela é criada automaticamente ao executar o código, se ainda não existir. O banco de dados utilizado é `dados_oceanicos.db`.
 
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Autores](#autores)
+### 2. Execução do Código
+Certifique-se de ter as bibliotecas `sqlite3` e `matplotlib` instaladas.
 
-## Instalação
+Execute o script Python para coletar dados dos sensores, armazená-los no banco de dados e realizar análises.
 
-### Pré-requisitos
+### 3. Análise de Dados
+Após a coleta, os dados são analisados para verificar se estão dentro dos padrões esperados para temperatura, salinidade e detecção de petróleo.
 
-- Python 3.x
-- Bibliotecas Python: `random`, `sqlite3`, `matplotlib`
+### 4. Visualização Gráfica
+Os dados coletados podem ser visualizados graficamente utilizando a função `visualizar_dados()`. Serão exibidos gráficos separados para temperatura, salinidade e detecção de petróleo ao longo do tempo.
 
-### Passos para instalação
+## Requisitos e Dependências
+- **Python 3.x**
+- **Bibliotecas**:
+  - `sqlite3`: Utilizada para interação com o banco de dados SQLite.
+  - `matplotlib`: Utilizada para criar os gráficos de visualização dos dados.
+  - `random`: Utiliza números aleatórios, para simular o sensor. 
 
-1. Clone o repositório:
+## Detalhes Adicionais
 
-    ```bash
-    git clone https://github.com/gumoura82/Python-GS.git
-    cd Python-GS
-    ```
+### Classe Sensor (`Sensor`)
+Define diferentes tipos de sensores (temperatura, salinidade, detecção de petróleo).
 
-2. Instale as dependências:
+#### Método `coletar_dados()`
+Simula a coleta de dados com valores aleatórios para cada tipo de sensor.
 
-    ```bash
-    pip install matplotlib
-    ```
+### Banco de Dados SQLite (`dados_oceanicos.db`)
+Armazena os dados coletados, incluindo `sensor_id`, `tipo`, `valor` e `timestamp`.
 
-## Uso
+### Análise de Dados
+Funções que verificam se os valores coletados estão dentro dos padrões esperados:
 
-### Coletando e Armazenando Dados
+- `analisar_temperatura()`
+- `analisar_salinidade()`
+- `analisar_petroleo()`
 
-1. Execute o script para coletar dados dos sensores e armazená-los no banco de dados:
-
-    ```bash
-    python moi.py
-    ```
-
-2. O script criará automaticamente a tabela `dados` no banco de dados `dados_oceanicos.db` se ainda não existir, coletará dados de três tipos de sensores (temperatura, salinidade e detecção de petróleo) e armazenará esses dados.
-
-### Análise e Visualização de Dados
-
-1. O script também executa uma análise básica dos dados coletados e exibe os resultados.
-2. Além disso, gera gráficos das medições ao longo do tempo para cada tipo de sensor.
-
-## Contribuição
-
-Se você gostaria de contribuir, por favor, siga os seguintes passos:
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/nova-feature`)
-5. Abra um Pull Request
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## Autores
-
-- **Ygor Vieira Pontes RM - 555686** - *Desenvolvedor inicial*
-- **Gustavo Oliveira de Moura RM - 555827** - *Desenvolvedor inicial*
-- **Lynn Bueno Rosa RM - 551102** - *Desenvolvedor inicial*
+### Visualização Gráfica (`visualizar_dados()`)
+Utiliza `matplotlib` para plotar gráficos de temperatura, salinidade e detecção de petróleo ao longo do tempo.
