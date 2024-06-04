@@ -24,7 +24,7 @@ Os dados coletados podem ser visualizados graficamente utilizando a função `vi
 - **Bibliotecas**:
   - `sqlite3`: Utilizada para interação com o banco de dados SQLite.
   - `matplotlib`: Utilizada para criar os gráficos de visualização dos dados.
-  - `random`: Utiliza números aleatórios, para simular o sensor. 
+  - `random`: Utiliza números aleatórios, para simular os dados coletados. 
 
 ## Detalhes Adicionais
 
