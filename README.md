@@ -1,4 +1,4 @@
-# Projeto de Monitoramento de Dados Oceânicos
+# (MOI) Monitoramento Oceânico Inteligente
 
 ## Descrição do Projeto
 Este projeto consiste em um sistema de monitoramento de dados oceânicos, utilizando sensores para coletar informações como temperatura, salinidade e detecção de petróleo. Os dados são armazenados em um banco de dados SQLite e analisados quanto à conformidade com os padrões esperados. Além disso, é possível visualizar graficamente a evolução desses dados ao longo do tempo.
